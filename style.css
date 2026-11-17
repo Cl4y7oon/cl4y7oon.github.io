@@ -43,3 +43,7 @@
 .brand-logo{display:block;width:44px;height:44px;object-fit:contain;flex-shrink:0}.footer .brand-logo{width:36px;height:36px}
 @media(max-width:680px){.header .brand-logo{width:32px;height:32px}.footer .brand-logo{width:30px;height:30px}}
 @media(max-width:360px){.header .brand-logo{width:28px;height:28px}}
+/* Camadas da imagem aprovada: desenho e degradês originais preservados. */
+.logo-breath{transform-origin:260px 260px;animation:logo-breathe 6s ease-in-out infinite}.logo-bracket-left{animation:logo-code-left 3.6s ease-in-out infinite}.logo-bracket-right{animation:logo-code-right 3.6s ease-in-out infinite}.hero-art:hover .logo-bracket-left,.hero-art:hover .logo-bracket-right{animation-duration:2s}@keyframes logo-breathe{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-5px) rotate(-1deg)}}@keyframes logo-code-left{0%,20%,80%,100%{transform:translateX(0)}50%{transform:translateX(-8px)}}@keyframes logo-code-right{0%,20%,80%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
+@media(prefers-reduced-motion:reduce){.logo-breath,.logo-bracket-left,.logo-bracket-right{animation:none}}
+.logo-bracket-left,.logo-bracket-right{transform-box:fill-box;transform-origin:center}@keyframes logo-code-left{0%,20%,80%,100%{transform:translateX(0) scale(1)}50%{transform:translateX(-6px) scale(1.06)}}@keyframes logo-code-right{0%,20%,80%,100%{transform:translateX(0) scale(1)}50%{transform:translateX(6px) scale(1.06)}}
